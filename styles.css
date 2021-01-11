@@ -87,6 +87,7 @@ main img.preview:last-child {
     height: 100vh;
     overflow: hidden;
   }
+
   main {
     /* layout met 4 kolommen */
     grid-template-columns: repeat(4, minmax(200px, 1fr));
@@ -95,6 +96,13 @@ main img.preview:last-child {
     /* elke kolom individueel scrolt */
     height: 100vh;
     overflow: auto;
+    padding-top: 42px;
+  }
+
+  div.column h1 {
+    position: fixed;
+    width: calc(25vw - 2.5px);
+    top: 0;
   }
 }
 
